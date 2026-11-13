@@ -1,0 +1,9 @@
+<view class="page loading-page">
+  <view class="loading-card card">
+    <rare-badge hidden="{{isHidden}}" label="GBTI MATCHING" />
+    <species-illustration type="rare" color="{{isHidden ? '#668777' : '#5C8574'}}" hidden="{{isHidden}}" illustration="{{isHidden ? '/assets/results/bag-character.png' : ''}}" />
+    <text class="loading-card__title">{{isHidden ? '检测到稀有精神波形' : '正在匹配精神物种'}}</text>
+    <text class="loading-card__desc">{{isHidden ? 'Rare Type 徽章已点亮，请稍等。' : '系统正在读取你的日常模式、网络状态和脑洞频率。'}}</text>
+    <progress-bar percent="{{progress}}" label="{{statusText}}" />
+  </view>
+</view>

@@ -1,0 +1,45 @@
+<view class="page index-page safe-bottom">
+  <music-toggle />
+  <view class="hero">
+    <view class="hero__brand">
+      <text class="hero__brand-code">GBTI</text>
+      <text>人类异常分类报告</text>
+    </view>
+
+    <view class="hero__copy">
+      <text class="hero__title">你到底是什么怪东西？</text>
+      <text class="hero__desc">用 18 道轻松问题，发现你的 GBTI 精神物种类型。</text>
+    </view>
+
+    <view class="hero__art card">
+      <species-illustration type="rare" color="#668777" hidden="{{true}}" illustration="/assets/results/bag-character.png" />
+      <view class="hero__bubbles">
+        <text>慢半拍校园网</text>
+        <text>低电量充电宝</text>
+        <text>躺平水豚</text>
+        <text>隐藏款 ???</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="info-row">
+    <view class="info-item">
+      <text class="info-item__num">18</text>
+      <text class="info-item__label">道问题</text>
+    </view>
+    <view class="info-item">
+      <text class="info-item__num">2</text>
+      <text class="info-item__label">分钟左右</text>
+    </view>
+    <view class="info-item">
+      <text class="info-item__num">28</text>
+      <text class="info-item__label">种结果</text>
+    </view>
+  </view>
+
+  <primary-button text="开始测试" block bind:press="startTest" />
+
+  <view class="disclaimer">
+    本测试仅供娱乐，不涉及真实人格诊断、性取向或性别认同判定。
+  </view>
+</view>

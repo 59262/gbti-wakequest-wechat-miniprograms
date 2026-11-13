@@ -1,0 +1,3 @@
+<button class="primary-button {{block ? 'is-block' : ''}} {{variant}}" hover-class="is-pressed" bindtap="onTap">
+  <text>{{text}}</text>
+</button>

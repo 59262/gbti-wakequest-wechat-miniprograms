@@ -1,0 +1,22 @@
+<view class="species species--{{type}} {{hidden ? 'is-hidden' : ''}}" style="--species-color: {{color}};">
+  <image
+    wx:if="{{illustration && !imageFailed}}"
+    class="species__image"
+    src="{{illustration}}"
+    mode="aspectFit"
+    binderror="onImageError"
+  />
+  <block wx:else>
+    <view class="species__halo"></view>
+    <view class="species__body">
+      <view class="species__facet facet-a"></view>
+      <view class="species__facet facet-b"></view>
+      <view class="species__eye eye-left"></view>
+      <view class="species__eye eye-right"></view>
+      <view class="species__mouth"></view>
+    </view>
+    <view class="species__chip chip-a"></view>
+    <view class="species__chip chip-b"></view>
+    <view class="species__chip chip-c"></view>
+  </block>
+</view>

@@ -1,0 +1,28 @@
+.loading-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-card {
+  width: 100%;
+  padding: 44rpx 32rpx 40rpx;
+  text-align: center;
+}
+
+.loading-card__title {
+  display: block;
+  margin-top: 24rpx;
+  color: #26312E;
+  font-size: 42rpx;
+  font-weight: 950;
+}
+
+.loading-card__desc {
+  display: block;
+  margin: 18rpx auto 38rpx;
+  max-width: 560rpx;
+  color: #68736F;
+  font-size: 26rpx;
+  line-height: 1.5;
+}

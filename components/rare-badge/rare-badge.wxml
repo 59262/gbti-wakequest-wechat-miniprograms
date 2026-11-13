@@ -1,0 +1,3 @@
+<view class="rare-badge {{hidden ? 'is-hidden' : ''}}">
+  <text>{{hidden ? 'RARE TYPE' : label}}</text>
+</view>

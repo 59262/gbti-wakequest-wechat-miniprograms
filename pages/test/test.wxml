@@ -1,0 +1,31 @@
+<view class="page test-page safe-bottom">
+  <view class="test-header">
+    <view>
+      <text class="test-header__stage">{{stageInfo.title}}</text>
+      <text class="test-header__hint">{{stageInfo.hint}}</text>
+    </view>
+    <text class="test-header__count">{{currentIndex + 1}}/18</text>
+  </view>
+
+  <progress-bar percent="{{progressPercent}}" label="精神物种匹配进度" />
+
+  <view class="question card fade-in">
+    <text class="question__index">QUESTION {{questionNo}}</text>
+    <text class="question__title">{{currentQuestion.title}}</text>
+  </view>
+
+  <view class="options">
+    <option-card
+      wx:for="{{currentQuestion.options}}"
+      wx:key="key"
+      option="{{item}}"
+      selected="{{answers[currentIndex] == item.key}}"
+      bindselect="selectOption"
+    />
+  </view>
+
+  <view class="test-actions">
+    <primary-button wx:if="{{currentIndex > 0}}" text="上一题" variant="secondary" bind:press="prevQuestion" />
+    <primary-button text="{{isLast ? '查看我的结果' : '下一题'}}" block="{{currentIndex == 0}}" bind:press="nextQuestion" />
+  </view>
+</view>

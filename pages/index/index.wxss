@@ -1,0 +1,106 @@
+.index-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__brand {
+  display: flex;
+  align-items: center;
+  gap: 14rpx;
+  color: #68736F;
+  font-size: 24rpx;
+  font-weight: 800;
+}
+
+.hero__brand-code {
+  padding: 8rpx 16rpx;
+  border-radius: 999rpx;
+  background: rgba(92, 133, 116, 0.12);
+  color: #5C8574;
+  font-weight: 900;
+}
+
+.hero__copy {
+  margin-top: 42rpx;
+}
+
+.hero__title {
+  display: block;
+  max-width: 620rpx;
+  color: #26312E;
+  font-size: 68rpx;
+  font-weight: 950;
+  line-height: 1.06;
+}
+
+.hero__desc {
+  display: block;
+  margin-top: 24rpx;
+  color: #68736F;
+  font-size: 30rpx;
+  line-height: 1.55;
+}
+
+.hero__art {
+  position: relative;
+  margin-top: 42rpx;
+  padding: 28rpx 24rpx 24rpx;
+  overflow: hidden;
+}
+
+.hero__bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14rpx;
+  justify-content: center;
+  margin-top: 8rpx;
+}
+
+.hero__bubbles text {
+  padding: 12rpx 18rpx;
+  border-radius: 999rpx;
+  background: rgba(92, 133, 116, 0.1);
+  color: #5C8574;
+  font-size: 22rpx;
+  font-weight: 800;
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16rpx;
+  margin: 36rpx 0 28rpx;
+}
+
+.info-item {
+  min-height: 128rpx;
+  padding: 20rpx 8rpx;
+  border-radius: 28rpx;
+  background: #FFFFFF;
+  text-align: center;
+  box-shadow: 0 12rpx 30rpx rgba(38, 49, 46, 0.05);
+}
+
+.info-item__num {
+  display: block;
+  color: #5C8574;
+  font-size: 42rpx;
+  font-weight: 950;
+  line-height: 1;
+}
+
+.info-item__label {
+  display: block;
+  margin-top: 12rpx;
+  color: #68736F;
+  font-size: 22rpx;
+  font-weight: 700;
+}
+
+.disclaimer {
+  margin-top: 28rpx;
+  color: #8C9692;
+  font-size: 22rpx;
+  line-height: 1.55;
+  text-align: center;
+}

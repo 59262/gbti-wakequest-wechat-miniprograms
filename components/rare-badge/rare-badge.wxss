@@ -1,0 +1,18 @@
+.rare-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44rpx;
+  padding: 0 18rpx;
+  border-radius: 999rpx;
+  background: rgba(92, 133, 116, 0.1);
+  color: #5C8574;
+  font-size: 20rpx;
+  font-weight: 900;
+  letter-spacing: 1rpx;
+}
+
+.rare-badge.is-hidden {
+  background: #B9CDBF;
+  color: #26312E;
+}

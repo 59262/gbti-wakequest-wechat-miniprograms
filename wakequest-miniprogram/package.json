@@ -1,0 +1,11 @@
+{
+  "name": "wakequest-miniprogram",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@tensorflow/tfjs-core": "3.5.0",
+    "@tensorflow/tfjs-converter": "3.5.0",
+    "@tensorflow/tfjs-backend-webgl": "3.5.0",
+    "fetch-wechat": "0.0.3"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "人类异常分类报告",
+  "usingComponents": {
+    "primary-button": "/components/primary-button/primary-button",
+    "species-illustration": "/components/species-illustration/species-illustration",
+    "music-toggle": "/components/music-toggle/music-toggle"
+  }
+}

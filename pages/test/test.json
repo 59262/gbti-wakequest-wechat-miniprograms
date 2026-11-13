@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "GBTI 测试",
+  "usingComponents": {
+    "option-card": "/components/option-card/option-card",
+    "primary-button": "/components/primary-button/primary-button",
+    "progress-bar": "/components/progress-bar/progress-bar"
+  }
+}

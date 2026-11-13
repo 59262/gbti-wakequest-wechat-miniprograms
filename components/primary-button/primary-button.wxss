@@ -1,0 +1,37 @@
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 240rpx;
+  height: 96rpx;
+  padding: 0 38rpx;
+  border-radius: 999rpx;
+  background: #5C8574;
+  color: #FFFFFF;
+  font-size: 30rpx;
+  font-weight: 800;
+  box-shadow: 0 18rpx 34rpx rgba(92, 133, 116, 0.25);
+  transition: transform 120ms ease, opacity 120ms ease;
+}
+
+.primary-button.is-block {
+  width: 100%;
+}
+
+.primary-button.secondary {
+  background: #FFFFFF;
+  color: #5C8574;
+  border: 2rpx solid rgba(92, 133, 116, 0.28);
+  box-shadow: none;
+}
+
+.primary-button.ghost {
+  background: rgba(92, 133, 116, 0.1);
+  color: #5C8574;
+  box-shadow: none;
+}
+
+.primary-button.is-pressed {
+  transform: scale(0.97);
+  opacity: 0.9;
+}

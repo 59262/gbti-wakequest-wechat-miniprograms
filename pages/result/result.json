@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "我的 GBTI 结果",
+  "usingComponents": {
+    "primary-button": "/components/primary-button/primary-button",
+    "species-illustration": "/components/species-illustration/species-illustration",
+    "rare-badge": "/components/rare-badge/rare-badge",
+    "share-card-modal": "/components/share-card-modal/share-card-modal"
+  }
+}

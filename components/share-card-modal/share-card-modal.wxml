@@ -1,0 +1,25 @@
+<view wx:if="{{visible}}" class="modal">
+  <view class="modal__mask" bindtap="onClose"></view>
+  <view class="modal__panel">
+    <view class="share-preview" style="--accent: {{result.cardColor}};">
+      <view class="share-preview__top">
+        <text>{{result.rarity.isHidden ? 'RARE TYPE' : 'GBTI TYPE RESULT'}}</text>
+        <text class="mono">{{result.code}}</text>
+      </view>
+      <view wx:if="{{result.hiddenMark}}" class="share-preview__mark">
+        <text class="mono">{{result.hiddenMark.serial}}</text>
+        <text>{{result.hiddenMark.label}}</text>
+      </view>
+      <species-illustration type="{{result.family}}" color="{{result.cardColor}}" hidden="{{result.rarity.isHidden}}" illustration="{{result.illustration}}" />
+      <view class="share-preview__name">{{result.name}}</view>
+      <view class="share-preview__quote">{{result.quote}}</view>
+      <view class="share-preview__tags">
+        <text wx:for="{{result.cardTags}}" wx:key="*this">#{{item}}</text>
+      </view>
+    </view>
+    <view class="modal__actions">
+      <primary-button text="保存到相册" block bind:press="onSave" />
+      <primary-button text="取消" variant="ghost" block bind:press="onClose" />
+    </view>
+  </view>
+</view>

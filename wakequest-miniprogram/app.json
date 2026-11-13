@@ -1,0 +1,9 @@
+{
+  "pages": ["pages/home/home", "pages/ring/ring", "pages/task/task", "pages/motion/motion", "pages/done/done"],
+  "window": {
+    "navigationBarTitleText": "醒醒任务",
+    "navigationBarBackgroundColor": "#151127",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#151127"
+  }
+}

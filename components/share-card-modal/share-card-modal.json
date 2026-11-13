@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "species-illustration": "/components/species-illustration/species-illustration",
+    "primary-button": "/components/primary-button/primary-button"
+  }
+}

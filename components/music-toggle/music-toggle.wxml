@@ -1,0 +1,3 @@
+<button class="music-toggle {{enabled ? 'is-on' : 'is-off'}}" bindtap="toggleMusic" aria-label="音乐开关">
+  <text>{{enabled ? '♪' : '×'}}</text>
+</button>

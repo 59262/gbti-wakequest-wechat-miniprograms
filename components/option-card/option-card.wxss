@@ -1,0 +1,49 @@
+.option-card {
+  display: flex;
+  gap: 22rpx;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 112rpx;
+  padding: 26rpx;
+  border: 2rpx solid rgba(38, 49, 46, 0.08);
+  border-radius: 28rpx;
+  background: #FFFFFF;
+  box-shadow: 0 12rpx 32rpx rgba(38, 49, 46, 0.05);
+  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.option-card + .option-card {
+  margin-top: 18rpx;
+}
+
+.option-card.is-selected {
+  border-color: rgba(92, 133, 116, 0.45);
+  background: rgba(92, 133, 116, 0.1);
+  transform: translateY(-2rpx);
+}
+
+.option-card__key {
+  flex: 0 0 52rpx;
+  width: 52rpx;
+  height: 52rpx;
+  border-radius: 50%;
+  background: rgba(92, 133, 116, 0.12);
+  color: #5C8574;
+  text-align: center;
+  font-size: 24rpx;
+  font-weight: 900;
+  line-height: 52rpx;
+}
+
+.option-card.is-selected .option-card__key {
+  background: #5C8574;
+  color: #FFFFFF;
+}
+
+.option-card__text {
+  flex: 1;
+  color: #26312E;
+  font-size: 29rpx;
+  font-weight: 650;
+  line-height: 1.45;
+}

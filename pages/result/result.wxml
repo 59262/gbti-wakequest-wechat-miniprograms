@@ -1,0 +1,62 @@
+<view class="page result-page safe-bottom" style="--accent: {{result.cardColor}};">
+  <view class="result-hero card">
+    <view class="result-hero__top">
+      <rare-badge hidden="{{result.rarity.isHidden}}" label="{{result.rarity.label}}" />
+      <text class="result-hero__code mono">{{result.code}}</text>
+    </view>
+    <view wx:if="{{result.hiddenMark}}" class="hidden-mark">
+      <text class="hidden-mark__serial mono">{{result.hiddenMark.serial}}</text>
+      <text class="hidden-mark__label">{{result.hiddenMark.label}}</text>
+    </view>
+    <species-illustration type="{{result.family}}" color="{{result.cardColor}}" hidden="{{result.rarity.isHidden}}" illustration="{{result.illustration}}" />
+    <text class="result-hero__name">{{result.name}}</text>
+    <text class="result-hero__category">{{result.category}}</text>
+    <view class="result-hero__tags">
+      <text wx:for="{{result.cardTags}}" wx:key="*this">#{{item}}</text>
+    </view>
+  </view>
+
+  <view class="quote-card card">
+    <text>{{result.quote}}</text>
+  </view>
+
+  <view class="section-title">异常表现</view>
+  <view class="report-card card">
+    <view class="behavior" wx:for="{{result.behaviors}}" wx:key="*this">
+      <text class="behavior__dot"></text>
+      <text class="behavior__text">{{item}}</text>
+    </view>
+  </view>
+
+  <view class="section-title">系统分析</view>
+  <view class="report-card card">
+    <text class="analysis">{{result.analysis}}</text>
+  </view>
+
+  <view class="section-title">物种关系</view>
+  <view class="match-grid">
+    <view class="match-card card">
+      <text class="match-card__label">最配物种</text>
+      <text class="match-card__name">{{result.bestMatch.name}}</text>
+      <text class="match-card__code mono">{{result.bestMatch.code}}</text>
+      <text class="match-card__reason">{{result.bestMatch.reason}}</text>
+    </view>
+    <view class="match-card card">
+      <text class="match-card__label">建议避让</text>
+      <text class="match-card__name">{{result.avoidMatch.name}}</text>
+      <text class="match-card__code mono">{{result.avoidMatch.code}}</text>
+      <text class="match-card__reason">{{result.avoidMatch.reason}}</text>
+    </view>
+  </view>
+
+  <view class="result-actions">
+    <primary-button text="{{result.rarity.isHidden ? '保存隐藏结果卡片' : '保存结果卡片'}}" block bind:press="openShareModal" />
+    <primary-button text="再测一次" variant="secondary" block bind:press="restart" />
+    <primary-button text="返回首页" variant="ghost" block bind:press="goHome" />
+  </view>
+
+  <view class="result-disclaimer">本测试仅供娱乐，不涉及真实人格诊断、性取向或性别认同判定。</view>
+
+  <share-card-modal visible="{{shareVisible}}" result="{{result}}" bind:close="closeShareModal" bind:save="saveShareCard" />
+  <canvas class="share-canvas" canvas-id="shareCanvas" style="width: 1080px; height: 1440px;"></canvas>
+</view>
